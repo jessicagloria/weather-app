@@ -1,0 +1,120 @@
+body {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  max-width: 1140px;
+  margin: 40px auto;
+}
+
+header .container {
+  border: 3px solid #790c5a;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  text-align: center;
+  font-weight: bolder;
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-size: 16pt;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+div.heading-hello {
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to top,
+    rgba(230, 233, 240, 0.1) 0%,
+    rgba(238, 241, 245, 0.1) 100%
+  );
+}
+.current-time,
+.week-weather,
+header {
+  margin: 00px 0px 40px 0px;
+}
+.current-time img {
+  max-width: 50px;
+  vertical-align: bottom;
+  color: #790c5a;
+}
+
+.main-image {
+  max-width: 100px;
+}
+.week-weather img {
+  max-width: 50px;
+  max-height: 150px;
+  margin: 20px auto;
+  display: block;
+}
+
+.wind-precipitation {
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-weather {
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+}
+
+.col-sm {
+  display: block;
+}
+.quote {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%) translateX(25%);
+  transform: translateY(-50%) translateX(25%);
+}
+
+.wind-precipitation img {
+  color: #790c5a;
+  max-width: 50px;
+  height: 64px;
+}
+
+.current-time img {
+  display: block;
+  margin: 0 auto;
+}
+
+.week-weather .container {
+  background-color: #f1d4d4;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.wind-precipitation .col-3 {
+  background-color: #f1d4d4;
+  border-radius: 50%;
+  padding: 30px 0px;
+}
+
+div.col-6 {
+  vertical-align: middle;
+}

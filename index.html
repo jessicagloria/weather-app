@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/853753c330.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>👩🏼‍💻 Weather</title>
+  </head>
+  <body>
+    <div class="card" style="width: 50rem">
+      <div class="card-body">
+        <div class="container">
+          <header>
+            <div class="container">
+              <div class="row">
+                <div class="col-5">
+                  <div class="heading-hello">
+                    <h1>Hello 👩🏼</h1>
+                    <h2 id = "date-update">26 Dez 2020</h2>
+                  </div>
+                </div>
+                <div class="form-weather col">
+                  <form id="city-search">
+                    <div class="form-row">
+                      <div class="col-8">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Change your City"
+                          id = "search-input-value";
+                        />
+                      </div>
+                      <div class="col">
+                        <button type="submit" value= "Search" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <div class="current-time">
+            <div class = "row">
+              <div class="col">
+            </div>
+              <div class="col">
+                <h2 id="city-display">London <a href=""id="celsius-temperature">Cº</a>|<a href=""id="fahrenheit-temperature">Fº</a></h2>
+                
+                <p id="time-update">//Current time 11h10</p>
+            </div>
+            <div class="col">
+          </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="images/cloud-rain-solid.svg" alt="_blank" />
+              </div>
+              <div class="col">
+                <img
+                  src="images/cloud-rain-solid.svg"
+                  alt="_blank"
+                  class="main-image"
+                />
+              </div>
+              <div class="col">
+                <img src="images/cloud-rain-solid.svg" alt="_blank" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>
+                  MIN ºC
+                  <br />
+                  10ºC //Rainy
+                </p>
+              </div>
+              <div class="col">
+                <p id = "celsius">23ºC </br>//Rainy</p>
+              </div>
+              <div class="col">
+                <p>MAX ºC 23ºC </br>//Rainy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="week-weather">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <h5>Wed</h5>
+                  <img src="images/sun-solid.svg" alt="_blank" />
+                </div>
+                <div class="col-2">
+                  <h5>Thu</h5>
+                  <img src="images/cloud-rain-solid.svg" alt="_blank" />
+                </div>
+                <div class="col-2">
+                  <h5>Fri</h5>
+                  <img src="images/cloud-solid.svg" alt="_blank" />
+                </div>
+                <div class="col-2">
+                  <h5>Sat</h5>
+                  <img src="images/cloud-rain-solid.svg" alt="_blank" />
+                </div>
+                <div class="col-2">
+                  <h5>Sun</h5>
+                  <img src="images/sun-solid.svg" alt="_blank" />
+                </div>
+                <div class="col-2">
+                  <h5>Mon</h5>
+                  <img src="images/sun-solid.svg" alt="_blank" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <p>
+                    10º/
+                    <strong> 20º </strong>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <p>
+                    11º/
+                    <strong> 21º </strong>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <p>
+                    11º/
+                    <strong> 18º </strong>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <p>
+                    9º/
+                    <strong> 17º </strong>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <p>
+                    6º/
+                    <strong> 19º </strong>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <p>
+                    9º/
+                    <strong> 21º </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wind-precipitation">
+            <div class="row">
+              <div class="col-3">
+                <img src="images/umbrella-solid.svg" alt="_blank" />
+                <br />
+                <h4>100%</h4>
+              </div>
+              <div class="col-3 wind">
+                <img src="images/wind-solid.svg" alt="_blank" />
+                <br />
+                <h4>98%</h4>
+              </div>
+              <div class="col-6">
+                <div class="quote">
+                  <h3>Don't Forget your Coat!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
+
